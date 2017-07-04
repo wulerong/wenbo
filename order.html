@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付页面</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<body>
+<!--------顶部----------->
+<div class="header_search">
+    <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="" class="img-responsive"></a>
+    </div>
+    <div class="header_hotline">
+        <span>您好，<b>不一样6250349</b></span>
+        <span>24小时服务热线：<i>400-000-0000</i></span>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<!----------内容部分--------->
+<div class="order_process">
+    <ul>
+        <li class="active">
+            <span>填写订单</span>
+            <b></b>
+            <i></i>
+        </li>
+        <li>
+            <span>在线支付</span>
+            <b></b>
+            <i></i>
+        </li>
+        <li>
+            <span>预定成功</span>
+            <b></b>
+            <i></i>
+        </li>
+    </ul>
+</div>
+<div class="order">
+    <div class="order_left">
+        <div class="order_tips">
+            <h5>温馨提示：</h5>
+            <p>
+                1. 航班价格变动频繁，请尽快完成订单填写并进行支付完成订单。（票价和退改签规则请以支付时为准）<br/>
+                2. 预订成功后不享受多退少补政策。若退票申请成功，退款将在7-15个工作日左右退还至您的支付账户中，请注意查收。<br/>
+                3. 资料填写过程中若有疑问请联系客服：400-000-0000
+            </p>
+        </div>
+        <div class="order_passenger">
+            <h3>乘机人</h3>
+            <div class="passenger">
+                <b>1</b>
+                <div class="passenger_id">
+                    <span><i>成人</i><img src="images/slide_down.png" alt=""></span>
+                    <ul>
+                        <li>成人</li>
+                        <li>儿童</li>
+                        <li>军人</li>
+                    </ul>
+                    <input type="text" placeholder="乘机人姓名，必须与乘机所持证件保持一致">
+                    <em>?</em>
+                </div>
+                <div class="passenger_id">
+                    <span><i>二代身份证</i><img src="images/slide_down.png" alt=""></span>
+                    <ul>
+                        <li>二代身份证</li>
+                        <li>军官证</li>
+                    </ul>
+                    <input type="text" placeholder="证件号码">
+                </div>
+            </div>
+            <div class="passenger">
+                <b>2</b>
+                <div class="passenger_id">
+                    <span><i>成人</i><img src="images/slide_down.png" alt=""></span>
+                    <ul>
+                        <li>成人</li>
+                        <li>儿童</li>
+                        <li>军人</li>
+                    </ul>
+                    <input type="text" placeholder="乘机人姓名，必须与乘机所持证件保持一致">
+                    <em>?</em>
+                </div>
+                <div class="passenger_id">
+                    <span><i>二代身份证</i><img src="images/slide_down.png" alt=""></span>
+                    <ul>
+                        <li>二代身份证</li>
+                        <li>军官证</li>
+                    </ul>
+                    <input type="text" placeholder="证件号码">
+                </div>
+            </div>
+            <div class="passenger">
+                <b>3</b>
+                <div class="passenger_id">
+                    <span><i>成人</i><img src="images/slide_down.png" alt=""></span>
+                    <ul>
+                        <li>成人</li>
+                        <li>儿童</li>
+                        <li>军人</li>
+                    </ul>
+                    <input type="text" placeholder="乘机人姓名，必须与乘机所持证件保持一致">
+                    <em>?</em>
+                </div>
+                <div class="passenger_id">
+                    <span><i>二代身份证</i><img src="images/slide_down.png" alt=""></span>
+                    <ul>
+                        <li>二代身份证</li>
+                        <li>军官证</li>
+                    </ul>
+                    <input type="text" placeholder="证件号码">
+                </div>
+            </div>
+            <div class="passenger_add">
+                <button type="button">+添加乘客</button>
+                <span>还可添加2人</span>
+            </div>
+        </div>
+        <div class="order_contact">
+            <h3>联系人</h3>
+            <div class="contact_li">
+                <input type="text" placeholder="联系人姓名" class="name">
+            </div>
+            <div class="contact_li">
+                <span><i>中国移动0086</i><img src="images/slide_down.png" alt=""></span>
+                <ul>
+                    <li>中国移动0086</li>
+                    <li>中国联通0010</li>
+                    <li>中国电信0000</li>
+                </ul>
+                <input type="text" placeholder="请输入您的手机号码" class="mobile">
+            </div>
+            <div class="contact_li">
+                <input type="text" placeholder="邮箱，接收订单信息(选填)" class="email">
+            </div>
+        </div>
+        <div class="order_safe">
+            <h3>航空保险</h3>
+            <ul>
+                <li>
+                    <b class="active"></b>
+                    <span>￥20元/份，保额80万</span>
+                </li>
+                <li>
+                    <b></b>
+                    <span>￥30元/份，保额260万</span>
+                </li>
+                <li>
+                    <b></b>
+                    <span>不购买保险</span>
+                </li>
+            </ul>
+        </div>
+        <div class="order_submit">
+            <span><b></b>我已阅读<a href="#">《购票须知》</a>,<a href="#">《航空意外险A款》</a>,<a href="#">《航空意外险B款》</a>,<a href="#">《航空延误险》</a>保险条款及免除责任且同意按此协议执行。</span>
+            <button type="submit">提交订单</button>
+        </div>
+    </div>
+    <div class="order_right">
+        <div class="order_ticket">
+            <div class="ticket_top">
+                <div class="ticket_date">
+                    <span>2016-11-04<b>周五</b></span>
+                    <i>南昌→上海</i>
+                </div>
+                <div class="ticket_seat">
+                    <h6><img src="images/plane_logo.jpg" alt="">中国东方航空</h6>
+                    <b>FM9246</b>
+                    <i>73E</i>
+                    <em>公务舱</em>
+                </div>
+                <div class="ticket_time">
+                    <div class="time_start">
+                        <b>10:15</b>
+                        <span>昌北机场  T2</span>
+                    </div>
+                    <div class="time_mid"><img src="images/ticket_mid.jpg" alt=""></div>
+                    <div class="time_end">
+                        <b>14:40</b>
+                        <span>虹桥机场  T2</span>
+                    </div>
+                </div>
+                <div class="ticket_reelect">
+                    <a href="#">重选航班</a>
+                </div>
+            </div>
+            <div class="ticket_bottom">
+                <div class="ticket_info">
+                    <ul>
+                        <li class="ton">
+                            <b>成人：</b>
+                            <span>￥<em><small>681</small>/人</em>x1</span>
+                        </li>
+                        <li>
+                            <h4>成人票价：</h4>
+                            <strong>￥631/人</strong>
+                        </li>
+                        <li>
+                            <h4>机建燃油：</h4>
+                            <strong>￥50/人</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ticket_safe">
+                    <b>意外险：</b>
+                    <span>￥<em><small>20</small>/人</em>x1</span>
+                </div>
+                <div class="ticket_total">
+                    <b><em>订单总额</em><i>1成人，0儿童</i></b>
+                    <span><small>￥</small>701</span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!----------底部----------->
+<div class="footer">
+    <div class="container">
+        <div class="foot_li">
+            <img src="images/foot_liaoyang.png" alt="">
+            <ul>
+                <li><b>疗养服务</b></li>
+                <li><a href="#">疗养线路</a></li>
+                <li><a href="#">疗养院</a></li>
+                <li><a href="#">疗养产品</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_piaowu.png" alt="">
+            <ul>
+                <li><b>票务服务</b></li>
+                <li><a href="#">国内机票</a></li>
+                <li><a href="#">国际机票</a></li>
+                <li><a href="#">火车票</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_hotel.png" alt="">
+            <ul>
+                <li><b>酒店服务</b></li>
+                <li><a href="#">酒店预订</a></li>
+                <li><a href="#">三星级</a></li>
+                <li><a href="#">四星级</a></li>
+                <li><a href="#">五星级</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_spot.png" alt="">
+            <ul>
+                <li><b>景点门票</b></li>
+                <li><a href="#">当季精选</a></li>
+                <li><a href="#">周边城市</a></li>
+                <li><a href="#">热门城市</a></li>
+                <li><a href="#">游玩主题</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_about.png" alt="">
+            <ul>
+                <li><b>关于我们</b></li>
+                <li><a href="#">企业简介</a></li>
+                <li><a href="#">媒体报道</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer_nav"></div>
+<div class="footer_copyright">
+    <div class="container">
+        <ul>
+            <li><a href="#">关于文博疗养</a></li>
+            <li><a href="#">业务合作</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">我要投诉</a></li>
+            <li><a href="#">安全中心</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul>
+            <li><b>Copyright ©2016 xxxxx.com   赣ICP备05021087号</b></li>
+            <li><b>文博疗养网客服电话12345678</b></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="images/foot_copyright.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>

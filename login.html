@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册页面</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<body class="login_bg">
+<!--------顶部----------->
+<div class="header_top">
+    <div class="container">
+        <div class="left">
+            <span>文博疗养欢迎您！</span>
+            <b><img src="images/phone.png" alt="" class="phone">手机客户端下载</b>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">登录</a></li>
+                <li>|</li>
+                <li class="li_drop">
+                    我的订单<img src="images/arrow_down.png" class="arrow_down" alt="">
+                    <ul>
+                        <li><a href="#">全部订单</a></li>
+                        <li><a href="#">我的机票</a></li>
+                        <li><a href="#">全部火车票</a></li>
+                        <li><a href="#">全部夺宝</a></li>
+                    </ul>
+                </li>
+                <li class="li_drop">
+                    客服中心<img src="images/arrow_down.png" class="arrow_down" alt="">
+                    <ul>
+                        <li><a href="#">全部订单</a></li>
+                        <li><a href="#">我的机票</a></li>
+                        <li><a href="#">全部火车票</a></li>
+                        <li><a href="#">全部夺宝</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header_search">
+    <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="" class="img-responsive"></a>
+    </div>
+</div>
+<!----------内容部分--------->
+<div class="login">
+    <div class="container">
+        <div class="login_contain_bg"></div>
+        <div class="login_contain">
+            <div class="login_title">
+                <ul>
+                    <li class="active">文博职工登录</li>
+                    <li>注册账号</li>
+                </ul>
+            </div>
+            <div class="login_content active">
+                <div class="login_account">
+                    <input type="text" placeholder="手机号/身份证号">
+                    <img src="images/login_men.png" alt="" class="login_icon">
+                </div>
+                <div class="login_password">
+                    <input type="password" placeholder="密码">
+                    <img src="images/login_key.png" alt="" class="login_icon">
+                </div>
+                <div class="login_active">
+                    <b><a href="#">账号激活</a></b>
+                    <b><a href="#">找回密码？</a></b>
+                </div>
+                <div class="login_btn">
+                    <button type="button"><span>登录</span></button>
+                </div>
+                <div class="login_state">
+                    <b><a href="#">查询账号状态</a></b>
+                </div>
+                <div class="login_ewm">
+                    <ul>
+                        <li>
+                            <img src="images/login_erweima.png" alt="">
+                            <span>ios客户端</span>
+                        </li>
+                        <li>
+                            <img src="images/login_erweima.png" alt="">
+                            <span>android客户端</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="login_content">
+                <div class="login_input">
+                    <b>姓名：</b><input type="text" placeholder="请输入您的姓名">
+                </div>
+                <div class="login_input">
+                    <b>手机号：</b><input type="text" placeholder="请输入您的手机号">
+                </div>
+                <div class="login_input">
+                    <b>身份证：</b><input type="text" placeholder="请输入您的身份证">
+                </div>
+                <div class="login_input">
+                    <b>密码：</b><input type="text" placeholder="请设置您的密码">
+                </div>
+                <div class="login_input">
+                    <b>验证码：</b><input type="text" placeholder="">
+                    <input type="button" value="获取验证码" class="yzm" onclick="settime(this)">
+                </div>
+                <div class="login_btn login_zhuce">
+                    <button type="button"><span>注册</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var countdown=60;
+    function settime(obj) {
+        if (countdown == 0) {
+            obj.removeAttribute("disabled");
+            obj.value="获取验证码";
+            countdown = 60;
+            return;
+        } else {
+            obj.setAttribute("disabled", true);
+            obj.value="重新发送(" + countdown + ")";
+            countdown--;
+        }
+        setTimeout(function() {
+                    settime(obj)}
+                ,1000)
+    }
+</script>
+<!----------底部----------->
+<div class="footer_copyright">
+    <div class="container">
+        <ul>
+            <li><a href="#">关于文博疗养</a></li>
+            <li><a href="#">业务合作</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">我要投诉</a></li>
+            <li><a href="#">安全中心</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul>
+            <li><b>Copyright ©2016 xxxxx.com   赣ICP备05021087号</b></li>
+            <li><b>文博疗养网客服电话12345678</b></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="images/foot_copyright.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飞机票页面</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<body>
+<!--------顶部----------->
+<div class="header_top">
+    <div class="container">
+        <div class="left">
+            <span>文博疗养欢迎您！</span>
+            <b><img src="images/phone.png" alt="" class="phone">手机客户端下载</b>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">登录</a></li>
+                <li>|</li>
+                <li class="li_drop">
+                    我的订单<img src="images/arrow_down.png" class="arrow_down" alt="">
+                    <ul>
+                        <li><a href="#">全部订单</a></li>
+                        <li><a href="#">我的机票</a></li>
+                        <li><a href="#">全部火车票</a></li>
+                        <li><a href="#">全部夺宝</a></li>
+                    </ul>
+                </li>
+                <li class="li_drop">
+                    客服中心<img src="images/arrow_down.png" class="arrow_down" alt="">
+                    <ul>
+                        <li><a href="#">全部订单</a></li>
+                        <li><a href="#">我的机票</a></li>
+                        <li><a href="#">全部火车票</a></li>
+                        <li><a href="#">全部夺宝</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header_search">
+    <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="" class="img-responsive"></a>
+    </div>
+    <div class="header_mid">
+        <div class="row header_find">
+            <input type="text" placeholder="请输入目的地/线路/酒店">
+            <button type="button">搜索</button>
+        </div>
+        <div class="header_hot">
+            <b>热门搜索：</b>
+            <ul>
+                <li><a href="#">三亚</a></li>
+                <li><a href="#">香港</a></li>
+                <li><a href="#">马儿代夫</a></li>
+                <li><a href="#">巴厘岛</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_contact">
+        <ul>
+            <li>
+                <img src="images/header_kefu.png" alt="">
+                <span>欢迎使用</span><br/>
+                <a href="#">在线客服</a>
+            </li>
+            <li>
+                <img src="images/header_tel.png" alt="">
+                <span>24h客户服务电话</span><br/>
+                <a href="#">400-8888-888</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-----------导航------------>
+<div class="header_nav">
+    <div class="container">
+        <ul>
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="#">疗养线路</a></li>
+            <li><a href="#">飞机票</a></li>
+            <li><a href="#">火车票</a></li>
+            <li><a href="#">疗养院</a></li>
+            <li><a href="#">酒店</a></li>
+            <li><a href="#">景点门票</a></li>
+            <li><a href="#">疗养产品</a></li>
+            <li><a href="#">手信</a></li>
+        </ul>
+    </div>
+</div>
+<!----------内容部分--------->
+<div class="location">
+    <span><a href="#">首页</a>><a href="#">飞机票</a></span>
+</div>
+<div class="plane_select">
+    <div class="plane_way">
+        <span><i>单程</i><img src="images/slide_down.png" alt=""></span>
+        <ul>
+            <li>单程</li>
+            <li>往返</li>
+        </ul>
+    </div>
+    <div class="way_start">
+        <input type="text" placeholder="" value="南昌">
+    </div>
+    <div class="way_style">
+        <b></b>
+        <i>换</i>
+    </div>
+    <div class="way_start">
+        <input type="text" placeholder="" value="广州">
+    </div>
+    <div class="way_date">
+        <input type="text" placeholder="2016-12-10" value="">
+        <b>周六</b>
+        <img src="images/date.png" alt="">
+    </div>
+    <div class="way_date">
+        <input type="text" placeholder="YYYY-MM-DD" value="">
+        <b></b>
+        <img src="images/date.png" alt="">
+    </div>
+    <button type="button" class="way_search">搜索</button>
+</div>
+<div class="plane">
+    <div class="plane_left">
+        <ul>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+            <li>
+                <div class="plane_company">
+                    <h3><img src="images/plane_logo.jpg" alt="">中国东方航空</h3>
+                    <span>MU3279&nbsp;&nbsp;共享E90(小)</span>
+                </div>
+                <div class="time_start">
+                    <b>09:25</b>
+                    <span>昌北T2</span>
+                </div>
+                <div class="time_date">
+                    <b>1小时30分钟</b>
+                </div>
+                <div class="time_end">
+                    <b>10:55</b>
+                    <span>新白云</span>
+                </div>
+                <div class="plane_meal">无餐</div>
+                <div class="plane_price"><b>￥</b>590</div>
+                <div class="plane_book">
+                    <button type="button">订票</button>
+                </div>
+            </li>
+        </ul>
+        <div class="page_next">
+            <ul>
+                <li class="on"><b>&lt;</b>上一页</li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="on">下一页<i>&gt;</i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="plane_right">
+        <div class="plane_tag">
+            <ul>
+                <li>
+                   <img src="images/tag_renzheng.png" alt="">
+                    <span>
+                        <b>100%航协认证</b>
+                        <i>机票代理商航空运输协会资格认证</i>
+                    </span>
+                </li>
+                <li>
+                    <img src="images/tag_tiexin.png" alt="">
+                    <span>
+                        <b>贴心售后服务</b>
+                        <i>支付成功后，支持随时查询出票进展</i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="return_introd">
+            <h3>广州--南昌<b>返程推荐</b></h3>
+            <ul>
+                <li>
+                    <span>12-10</span>
+                    <b>周六</b>
+                    <a href="#"><i><em>￥</em>290</i></a>
+                </li>
+                <li>
+                    <span>12-11</span>
+                    <b>周日</b>
+                    <a href="#"><i><em>￥</em>290</i></a>
+                </li>
+                <li>
+                    <span>12-12</span>
+                    <b>周一</b>
+                    <a href="#"><i><em>￥</em>290</i></a>
+                </li>
+                <li>
+                    <span>12-13</span>
+                    <b>周二</b>
+                    <a href="#"><i><em>￥</em>290</i></a>
+                </li>
+                <li>
+                    <span>12-14</span>
+                    <b>周三</b>
+                    <a href="#"><i><em>￥</em>290</i></a>
+                </li>
+                <li>
+                    <span>12-15</span>
+                    <b>周四</b>
+                    <a href="#"><i><em>￥</em>290</i></a>
+                </li>
+                <li>
+                    <span>12-16</span>
+                    <b>周五</b>
+                    <a href="#"><i><em>￥</em>290</i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nearby">
+            <h3>周边<b>特价推荐</b></h3>
+            <ul>
+                <li>
+                    <span>
+                        <a href="#"><b>南昌--广州</b></a>
+                        <i>1.9折</i>
+                    </span>
+                    <span>
+                        <b><small>12-10</small><strong>中国东方航空</strong></b>
+                        <em>￥140</em>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                       <a href="#"><b>南昌--广州</b></a>
+                        <i>1.9折</i>
+                    </span>
+                    <span>
+                        <b><small>12-10</small><strong>中国东方航空</strong></b>
+                        <em>￥140</em>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                       <a href="#"><b>南昌--广州</b></a>
+                        <i>1.9折</i>
+                    </span>
+                    <span>
+                        <b><small>12-10</small><strong>中国东方航空</strong></b>
+                        <em>￥140</em>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="history">
+            <h3>历史查询</h3>
+            <ul>
+                <li>
+                    <span><b>单程</b><i>南昌--广州</i></span>
+                    <span><small>2016-12-10（周六）</small><a href="#"><em>刚刚查询</em></a></span>
+                </li>
+                <li>
+                    <span><b>单程</b><i>南昌--广州</i></span>
+                    <span><small>2016-12-10（周六）</small><a href="#"><em>8分钟前查询</em></a></span>
+                </li>
+                <li>
+                    <span><b>单程</b><i>南昌--广州</i></span>
+                    <span><small>2016-12-10（周六）</small><a href="#"><em>2小时前查询</em></a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<!----------底部----------->
+<div class="footer">
+    <div class="container">
+        <div class="foot_li">
+            <img src="images/foot_liaoyang.png" alt="">
+            <ul>
+                <li><b>疗养服务</b></li>
+                <li><a href="#">疗养线路</a></li>
+                <li><a href="#">疗养院</a></li>
+                <li><a href="#">疗养产品</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_piaowu.png" alt="">
+            <ul>
+                <li><b>票务服务</b></li>
+                <li><a href="#">国内机票</a></li>
+                <li><a href="#">国际机票</a></li>
+                <li><a href="#">火车票</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_hotel.png" alt="">
+            <ul>
+                <li><b>酒店服务</b></li>
+                <li><a href="#">酒店预订</a></li>
+                <li><a href="#">三星级</a></li>
+                <li><a href="#">四星级</a></li>
+                <li><a href="#">五星级</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_spot.png" alt="">
+            <ul>
+                <li><b>景点门票</b></li>
+                <li><a href="#">当季精选</a></li>
+                <li><a href="#">周边城市</a></li>
+                <li><a href="#">热门城市</a></li>
+                <li><a href="#">游玩主题</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_about.png" alt="">
+            <ul>
+                <li><b>关于我们</b></li>
+                <li><a href="#">企业简介</a></li>
+                <li><a href="#">媒体报道</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer_nav"></div>
+<div class="footer_copyright">
+    <div class="container">
+        <ul>
+            <li><a href="#">关于文博疗养</a></li>
+            <li><a href="#">业务合作</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">我要投诉</a></li>
+            <li><a href="#">安全中心</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul>
+            <li><b>Copyright ©2016 xxxxx.com   赣ICP备05021087号</b></li>
+            <li><b>文博疗养网客服电话12345678</b></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="images/foot_copyright.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酒店</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<body>
+<!--------顶部----------->
+<div class="header_top">
+    <div class="container">
+        <div class="left">
+            <span>文博疗养欢迎您！</span>
+            <b><img src="images/phone.png" alt="" class="phone">手机客户端下载</b>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">登录</a></li>
+                <li>|</li>
+                <li class="li_drop">
+                    我的订单<img src="images/arrow_down.png" class="arrow_down" alt="">
+                    <ul>
+                        <li><a href="#">全部订单</a></li>
+                        <li><a href="#">我的机票</a></li>
+                        <li><a href="#">全部火车票</a></li>
+                        <li><a href="#">全部夺宝</a></li>
+                    </ul>
+                </li>
+                <li class="li_drop">
+                    客服中心<img src="images/arrow_down.png" class="arrow_down" alt="">
+                    <ul>
+                        <li><a href="#">全部订单</a></li>
+                        <li><a href="#">我的机票</a></li>
+                        <li><a href="#">全部火车票</a></li>
+                        <li><a href="#">全部夺宝</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header_search">
+    <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="" class="img-responsive"></a>
+    </div>
+    <div class="header_mid">
+        <div class="row header_find">
+            <input type="text" placeholder="请输入目的地/线路/酒店">
+            <button type="button">搜索</button>
+        </div>
+        <div class="header_hot">
+            <b>热门搜索：</b>
+            <ul>
+                <li><a href="#">三亚</a></li>
+                <li><a href="#">香港</a></li>
+                <li><a href="#">马儿代夫</a></li>
+                <li><a href="#">巴厘岛</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_contact">
+        <ul>
+            <li>
+                <img src="images/header_kefu.png" alt="">
+                <span>欢迎使用</span><br/>
+                <a href="#">在线客服</a>
+            </li>
+            <li>
+                <img src="images/header_tel.png" alt="">
+                <span>24h客户服务电话</span><br/>
+                <a href="#">400-8888-888</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-----------导航------------>
+<div class="header_nav">
+    <div class="container">
+        <ul>
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="#">疗养线路</a></li>
+            <li><a href="#">飞机票</a></li>
+            <li><a href="#">火车票</a></li>
+            <li><a href="#">疗养院</a></li>
+            <li><a href="#">酒店</a></li>
+            <li><a href="#">景点门票</a></li>
+            <li><a href="#">疗养产品</a></li>
+            <li><a href="#">手信</a></li>
+        </ul>
+    </div>
+</div>
+<!---------------内容部分------------>
+<div class="location">
+    <span><a href="#">首页</a>><a href="#">酒店</a></span>
+</div>
+<div class="hotel_search">
+    <div class="hotel_city">
+        <span>
+            <input type="text" placeholder="" value="北京">
+            <img src="images/site.png" alt="">
+        </span>
+    </div>
+    <div class="hotel_date">
+        <input type="text" placeholder="入住 2016-12-10" value="">
+        <b>明天</b>
+        <img src="images/date.png" alt="">
+    </div>
+    <div class="hotel_date">
+        <input type="text" placeholder="离店 2016-12-12" value="">
+        <b>后天</b>
+        <img src="images/date.png" alt="">
+    </div>
+    <div class="hotel_site">
+        <span>
+            <input type="text" placeholder="" value="北京">
+            <img src="images/site.png" alt="">
+        </span>
+    </div>
+    <button type="button" class="search">搜索</button>
+</div>
+
+<div style="clear: both"></div>
+<div class="filter">
+    <div class="filter_li_first">
+        <div class="filter_site">
+            <b>酒店位置</b>
+            <ul>
+                <li><span>热门位置</span><em></em></li>
+                <li><span>行政区</span><em></em></li>
+                <li><span>地铁线路</span><em></em></li>
+                <li><span>车站/机场</span><em></em></li>
+                <li><span>观光景点</span><em></em></li>
+                <li><span>医院</span><em></em></li>
+                <li><span>大学</span><em></em></li>
+                <li><span>郊游景点</span><em></em></li>
+            </ul>
+        </div>
+        <div class="site_contain">
+            <div class="site_contain_title">
+                <ul>
+                    <li class="active">东城区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content block">
+                <ul>
+                    <li>王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>222王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>333王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>444王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>555王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>666王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>777王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>888王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>999王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>10王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+        </div>
+        <div class="site_contain">
+            <div class="site_contain_content block">
+                <ul>
+                    <li>东城区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                    <li>西城区</li>
+                    <li>朝阳区</li>
+                    <li>丰台区</li>
+                </ul>
+            </div>
+        </div>
+        <div class="site_contain">
+            <div class="site_contain_title">
+                <ul>
+                    <li class="active">1号线</li>
+                    <li>2号线</li>
+                </ul>
+            </div>
+            <div class="site_contain_content block">
+                <ul>
+                    <li>王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>22王府井商圈</li>
+                    <li>北京站</li>
+                    <li>前门商圈</li>
+                    <li>东直门商圈</li>
+                    <li>朝阳门区域</li>
+                    <li>崇文门商圈</li>
+                    <li>广渠门地区</li>
+                    <li>沙子口地区</li>
+                </ul>
+            </div>
+        </div>
+        <div class="site_contain">
+            <div class="site_contain_title">
+                <ul>
+                    <li class="active">机场</li>
+                    <li>火车站</li>
+                    <li>汽车站</li>
+                </ul>
+            </div>
+            <div class="site_contain_content block">
+                <ul>
+                    <li>首都机场</li>
+                    <li>北京南苑机场</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>222首都机场</li>
+                    <li>北京南苑机场</li>
+                </ul>
+            </div>
+            <div class="site_contain_content">
+                <ul>
+                    <li>3333首都机场</li>
+                    <li>北京南苑机场</li>
+                </ul>
+            </div>
+        </div>
+        <div class="site_contain">
+            <div class="site_contain_content block">
+                <ul>
+                    <li>天安门</li>
+                    <li>南锣鼓巷</li>
+                    <li>故宫</li>
+                    <li>鸟巢</li>
+                    <li>颐和园</li>
+                    <li>南锣鼓巷</li>
+                    <li>故宫</li>
+                    <li>鸟巢</li>
+                    <li>颐和园</li>
+                    <li>南锣鼓巷</li>
+                    <li>故宫</li>
+                    <li>鸟巢</li>
+                    <li>颐和园</li>
+                    <li>南锣鼓巷</li>
+                    <li>故宫</li>
+                    <li>鸟巢</li>
+                    <li>颐和园</li>
+                </ul>
+            </div>
+        </div>
+        <div class="site_contain">
+            <div class="site_contain_content block">
+                <ul>
+                    <li>北京协和医院</li>
+                    <li>北京协和医院西院</li>
+                    <li>北京儿童医院</li>
+                    <li>北京301医院</li>
+                    <li>北京大学第三医院</li>
+                    <li>北京积水潭医院</li>
+                    <li>北京协和医院西院</li>
+                    <li>北京儿童医院</li>
+                    <li>北京301医院</li>
+                    <li>北京大学第三医院</li>
+                    <li>北京积水潭医院</li>
+                    <li>北京协和医院西院</li>
+                    <li>北京儿童医院</li>
+                    <li>北京301医院</li>
+                    <li>北京大学第三医院</li>
+                    <li>北京积水潭医院</li>
+                    <li>北京协和医院西院</li>
+                    <li>北京儿童医院</li>
+                    <li>北京301医院</li>
+                    <li>北京大学第三医院</li>
+                    <li>北京积水潭医院</li>
+                    <li>北京协和医院西院</li>
+                    <li>北京儿童医院</li>
+                    <li>北京301医院</li>
+                    <li>北京大学第三医院</li>
+                    <li>北京积水潭医院</li>
+                </ul>
+            </div>
+        </div>
+        <div class="site_contain">
+            <div class="site_contain_content block">
+                <ul>
+                    <li>北京大学</li>
+                    <li>清华大学</li>
+                    <li>北京师范大学</li>
+                    <li>北京交通大学</li>
+                    <li>中央民族大学</li>
+                    <li>中国传媒大学</li>
+                    <li>北京师范大学</li>
+                    <li>北京交通大学</li>
+                    <li>中央民族大学</li>
+                    <li>中国传媒大学</li>
+                    <li>北京交通大学</li>
+                    <li>中央民族大学</li>
+                    <li>中国传媒大学</li>
+                    <li>北京交通大学</li>
+                    <li>中央民族大学</li>
+                    <li>中国传媒大学</li>
+                </ul>
+            </div>
+        </div>
+        <div class="site_contain">
+            <div class="site_contain_content block">
+                <ul>
+                    <li>古北水镇</li>
+                    <li>雁栖湖</li>
+                    <li>十渡风景区</li>
+                    <li>八达岭长城</li>
+                    <li>金海湖</li>
+                    <li>雁栖湖</li>
+                    <li>十渡风景区</li>
+                    <li>八达岭长城</li>
+                    <li>金海湖</li>
+                    <li>雁栖湖</li>
+                    <li>十渡风景区</li>
+                    <li>八达岭长城</li>
+                    <li>金海湖</li>
+                    <li>雁栖湖</li>
+                    <li>十渡风景区</li>
+                    <li>八达岭长城</li>
+                    <li>金海湖</li>
+                    <li>雁栖湖</li>
+                    <li>十渡风景区</li>
+                    <li>八达岭长城</li>
+                    <li>金海湖</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="filter_li filter_first">
+        <b>价格范围</b>
+        <i>不限</i>
+        <ul>
+            <li>
+                <em></em>
+                <span>￥200以下</span>
+            </li>
+            <li>
+                <em></em>
+                <span>￥200-￥300</span>
+            </li>
+            <li>
+                <em></em>
+                <span>￥300-￥500</span>
+            </li>
+            <li>
+                <em></em>
+                <span>￥500以上</span>
+            </li>
+            <li class="price">
+                <span>自定义</span>
+                <input type="text" placeholder="">
+                <span>-</span>
+                <input type="text" placeholder="">
+                <button type="button" class="submit">确定</button>
+            </li>
+        </ul>
+    </div>
+    <div class="filter_li">
+        <b>酒店级别</b>
+        <i>不限</i>
+        <ul>
+            <li>
+                <em></em>
+                <span>经济型</span>
+            </li>
+            <li>
+                <em></em>
+                <span>二星级/其他</span>
+            </li>
+            <li>
+                <em></em>
+                <span>三星级/舒适</span>
+            </li>
+            <li>
+                <em></em>
+                <span>四星级/高档</span>
+            </li>
+            <li>
+                <em></em>
+                <span>五星级/豪华</span>
+            </li>
+        </ul>
+    </div>
+    <div class="filter_li">
+        <b>连锁品牌</b>
+        <i>不限</i>
+        <ul>
+            <li>
+                <em></em>
+                <span>如家快捷</span>
+            </li>
+            <li>
+                <em></em>
+                <span>7天酒店</span>
+            </li>
+            <li>
+                <em></em>
+                <span>速8</span>
+            </li>
+            <li>
+                <em></em>
+                <span>汉庭酒店</span>
+            </li>
+            <li>
+                <em></em>
+                <span>格林豪泰</span>
+            </li>
+            <li>
+                <em></em>
+                <span>99连锁</span>
+            </li>
+            <li>
+                <em></em>
+                <span>99优选</span>
+            </li>
+            <li>
+                <em></em>
+                <span>海友酒店</span>
+            </li>
+            <li>
+                <em></em>
+                <span>锦江之星</span>
+            </li>
+        </ul>
+        <div class="filter_brand_more">
+            <em></em>
+        </div>
+        <div class="filter_brand_alert">
+            <div class="alert_brand_li">
+                <h4>经济型品牌</h4>
+                <div class="brand_contain">
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="alert_brand_li">
+                <h4>舒适型品牌</h4>
+                <div class="brand_contain">
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="alert_brand_li">
+                <h4>高档型品牌</h4>
+                <div class="brand_contain">
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="alert_brand_li">
+                <h4>豪华型品牌</h4>
+                <div class="brand_contain">
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                    <div class="brand_li">
+                        <small></small>
+                        <strong>格林豪泰</strong>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="brand_close">x</div>
+    </div>
+    <div class="filter_li none">
+        <b>酒店类型</b>
+        <i>不限</i>
+        <ul>
+            <li>
+                <em></em>
+                <span>连锁品牌</span>
+            </li>
+            <li>
+                <em></em>
+                <span>商务型酒店</span>
+            </li>
+            <li>
+                <em></em>
+                <span>客栈</span>
+            </li>
+            <li>
+                <em></em>
+                <span>酒店式公寓</span>
+            </li>
+            <li>
+                <em></em>
+                <span>家庭旅馆</span>
+            </li>
+            <li>
+                <em></em>
+                <span>青年旅舍</span>
+            </li>
+            <li>
+                <em></em>
+                <span>招待所</span>
+            </li>
+            <li>
+                <em></em>
+                <span>奢华酒店</span>
+            </li>
+            <li>
+                <em></em>
+                <span>度假休闲酒店</span>
+            </li>
+        </ul>
+        <div class="filter_more">
+            <em></em>
+        </div>
+        <div class="filter_alert">
+            <div class="more_li">
+                <small></small>
+                <strong>客栈</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>商务型酒店</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>连锁品牌</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>酒店式公寓</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>家庭旅馆</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>青年旅舍</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>招待所</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>奢华酒店</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>连锁品牌</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>酒店式公寓</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>家庭旅馆</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>青年旅舍</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>招待所</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>奢华酒店</strong>
+            </div>
+            <div class="more_li">
+                <small></small>
+                <strong>连锁品牌</strong>
+            </div>
+        </div>
+        <div class="close">x</div>
+    </div>
+    <div class="filter_li none">
+        <b>入住要求</b>
+        <i>不限</i>
+        <ul>
+            <li>
+                <em></em>
+                <span>免费宽带</span>
+            </li>
+            <li>
+                <em></em>
+                <span>游泳池</span>
+            </li>
+            <li>
+                <em></em>
+                <span>新开业/装修</span>
+            </li>
+            <li>
+                <em></em>
+                <span>餐厅</span>
+            </li>
+            <li>
+                <em></em>
+                <span>商务中心</span>
+            </li>
+            <li>
+                <em></em>
+                <span>健身房</span>
+            </li>
+            <li>
+                <em></em>
+                <span>会议室</span>
+            </li>
+            <li>
+                <em></em>
+                <span>接待外宾</span>
+            </li>
+            <li>
+                <em></em>
+                <span>可携带宠物</span>
+            </li>
+        </ul>
+    </div>
+    <div style="clear: both"></div>
+</div>
+<div class="filter_down">
+    <span>酒店类型及入住要求</span>
+    <em></em>
+</div>
+<div class="route">
+    <div class="route_left">
+        <div class="route_li hotel_li">
+            <div class="route_li_img">
+                <div class="img">
+                    <a href="#">
+                        <img src="images/hotelimg.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="hotel_li_text">
+                <a href="#"><h3>北京朝阳松酒店</h3></a>
+                <span>“地理位置绝对优越，离王府井和天安门都很近，不含早餐，需要每人18元，但是饭菜质量不行，房间Wifi条件不错，卫生间条件一般。</span>
+                <b>性价比优秀，服务也比较贴心</b>
+            </div>
+            <div class="route_li_book">
+                <i><small>￥</small><em>10645</em>起</i>
+                <a href="#" class="book">预订</a>
+            </div>
+        </div>
+        <div class="route_li hotel_li">
+            <div class="route_li_img">
+                <div class="img">
+                    <a href="#">
+                        <img src="images/hotel01.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="hotel_li_text">
+                <a href="#"><h3>北京朝阳松酒店</h3></a>
+                <span>“地理位置绝对优越，离王府井和天安门都很近，不含早餐，需要每人18元，但是饭菜质量不行，房间Wifi条件不错，卫生间条件一般。</span>
+                <b>性价比优秀，服务也比较贴心</b>
+            </div>
+            <div class="route_li_book">
+                <i><small>￥</small><em>10645</em>起</i>
+                <a href="#" class="book">预订</a>
+            </div>
+        </div>
+        <div class="route_li hotel_li">
+            <div class="route_li_img">
+                <div class="img">
+                    <a href="#">
+                        <img src="images/hotel01.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="hotel_li_text">
+                <a href="#"><h3>北京朝阳松酒店</h3></a>
+                <span>“地理位置绝对优越，离王府井和天安门都很近，不含早餐，需要每人18元，但是饭菜质量不行，房间Wifi条件不错，卫生间条件一般。</span>
+                <b>性价比优秀，服务也比较贴心</b>
+            </div>
+            <div class="route_li_book">
+                <i><small>￥</small><em>10645</em>起</i>
+                <a href="#" class="book">预订</a>
+            </div>
+        </div>
+        <div class="route_li hotel_li">
+            <div class="route_li_img">
+                <div class="img">
+                    <a href="#">
+                        <img src="images/hotel01.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="hotel_li_text">
+                <a href="#"><h3>北京朝阳松酒店</h3></a>
+                <span>“地理位置绝对优越，离王府井和天安门都很近，不含早餐，需要每人18元，但是饭菜质量不行，房间Wifi条件不错，卫生间条件一般。</span>
+                <b>性价比优秀，服务也比较贴心</b>
+            </div>
+            <div class="route_li_book">
+                <i><small>￥</small><em>10645</em>起</i>
+                <a href="#" class="book">预订</a>
+            </div>
+        </div>
+        <div class="page_next">
+            <ul>
+                <li class="on"><b>&lt;</b>上一页</li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="on">下一页<i>&gt;</i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="route_right">
+        <div class="route_right_hot">
+            <h3>推荐热门线路产品</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i>1</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>2</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>3</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>4</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>5</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<!----------底部----------->
+<div class="footer">
+    <div class="container">
+        <div class="foot_li">
+            <img src="images/foot_liaoyang.png" alt="">
+            <ul>
+                <li><b>疗养服务</b></li>
+                <li><a href="#">疗养线路</a></li>
+                <li><a href="#">疗养院</a></li>
+                <li><a href="#">疗养产品</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_piaowu.png" alt="">
+            <ul>
+                <li><b>票务服务</b></li>
+                <li><a href="#">国内机票</a></li>
+                <li><a href="#">国际机票</a></li>
+                <li><a href="#">火车票</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_hotel.png" alt="">
+            <ul>
+                <li><b>酒店服务</b></li>
+                <li><a href="#">酒店预订</a></li>
+                <li><a href="#">三星级</a></li>
+                <li><a href="#">四星级</a></li>
+                <li><a href="#">五星级</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_spot.png" alt="">
+            <ul>
+                <li><b>景点门票</b></li>
+                <li><a href="#">当季精选</a></li>
+                <li><a href="#">周边城市</a></li>
+                <li><a href="#">热门城市</a></li>
+                <li><a href="#">游玩主题</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_about.png" alt="">
+            <ul>
+                <li><b>关于我们</b></li>
+                <li><a href="#">企业简介</a></li>
+                <li><a href="#">媒体报道</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer_nav"></div>
+<div class="footer_copyright">
+    <div class="container">
+        <ul>
+            <li><a href="#">关于文博疗养</a></li>
+            <li><a href="#">业务合作</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">我要投诉</a></li>
+            <li><a href="#">安全中心</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul>
+            <li><b>Copyright ©2016 xxxxx.com   赣ICP备05021087号</b></li>
+            <li><b>文博疗养网客服电话12345678</b></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="images/foot_copyright.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>

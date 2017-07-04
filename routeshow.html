@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>疗养线路详情</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/selectivizr-min.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<body>
+<!--------顶部----------->
+<div class="header_top">
+    <div class="container">
+        <div class="left">
+            <span>文博疗养欢迎您！</span>
+            <b><img src="images/phone.png" alt="" class="phone">手机客户端下载</b>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">登录</a></li>
+                <li>|</li>
+                <li class="li_drop">
+                    我的订单<img src="images/arrow_down.png" class="arrow_down" alt="">
+                    <ul>
+                        <li><a href="#">全部订单</a></li>
+                        <li><a href="#">我的机票</a></li>
+                        <li><a href="#">全部火车票</a></li>
+                        <li><a href="#">全部夺宝</a></li>
+                    </ul>
+                </li>
+                <li class="li_drop">
+                    客服中心<img src="images/arrow_down.png" class="arrow_down" alt="">
+                    <ul>
+                        <li><a href="#">全部订单</a></li>
+                        <li><a href="#">我的机票</a></li>
+                        <li><a href="#">全部火车票</a></li>
+                        <li><a href="#">全部夺宝</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header_search">
+    <div class="logo">
+        <a href="#"><img src="images/logo.png" alt="" class="img-responsive"></a>
+    </div>
+    <div class="header_mid">
+        <div class="row header_find">
+            <input type="text" placeholder="请输入目的地/线路/酒店">
+            <button type="button">搜索</button>
+        </div>
+        <div class="header_hot">
+            <b>热门搜索：</b>
+            <ul>
+                <li><a href="#">三亚</a></li>
+                <li><a href="#">香港</a></li>
+                <li><a href="#">马儿代夫</a></li>
+                <li><a href="#">巴厘岛</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_contact">
+        <ul>
+            <li>
+                <img src="images/header_kefu.png" alt="">
+                <span>欢迎使用</span><br/>
+                <a href="#">在线客服</a>
+            </li>
+            <li>
+                <img src="images/header_tel.png" alt="">
+                <span>24h客户服务电话</span><br/>
+                <a href="#">400-8888-888</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-----------导航------------>
+<div class="header_nav">
+    <div class="container">
+        <ul>
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="#">疗养线路</a></li>
+            <li><a href="#">飞机票</a></li>
+            <li><a href="#">火车票</a></li>
+            <li><a href="#">疗养院</a></li>
+            <li><a href="#">酒店</a></li>
+            <li><a href="#">景点门票</a></li>
+            <li><a href="#">疗养产品</a></li>
+            <li><a href="#">手信</a></li>
+        </ul>
+    </div>
+</div>
+<!---------------内容部分------------>
+<div class="location">
+    <span><a href="#">首页</a>><a href="#">疗养线路</a>><a href="#">疗养线路详情</a></span>
+</div>
+<div class="route">
+    <div class="route_left">
+        <div class="route_details">
+            <a href="#"><h3>双飞厦门/纯玩3+2半自由行 ，美食+骑行，鼓浪屿，南普陀寺，集美学村<small>热卖</small></h3></a>
+            <div class="team_num">
+                <span>跟团和自由行的完美结合，环岛骑行+美食小吃</span>
+                <b>团号：A1-XM32</b>
+            </div>
+            <div class="number">
+                <span>跟团游</span>
+                <b>编号：210139579</b>
+            </div>
+            <div class="route_slide">
+                <div class="slide">
+                    <div id="tFocus">
+                        <div class="prev" id="prev"></div>
+                        <div class="next" id="next"></div>
+                        <ul id="tFocus-pic">
+                            <li><a href="#"><img src="images/slide01.jpg"  alt=""></a></li>
+                            <li><a href="#"><img src="images/slide02.jpg"  alt=""></a></li>
+                            <li><a href="#"><img src="images/slide03.jpg"  alt=""></a></li>
+                            <li><a href="#"><img src="images/slide04.jpg"  alt=""></a></li>
+                            <li><a href="#"><img src="images/slide05.jpg"  alt=""></a></li>
+                        </ul>
+                        <div id="tFocusBtn">
+                            <a href="javascript:void(0);" id="tFocus-leftbtn"></a>
+                            <div id="tFocus-btn">
+                                <ul>
+                                    <li class="active"><img src="images/slide01.jpg"  alt=""></li>
+                                    <li><img src="images/slide02.jpg"  alt=""></li>
+                                    <li><img src="images/slide03.jpg"  alt=""></li>
+                                    <li><img src="images/slide04.jpg"  alt=""></li>
+                                    <li><img src="images/slide05.jpg"  alt=""></li>
+                                </ul>
+                            </div>
+                            <a href="javascript:void(0);" id="tFocus-rightbtn"></a>
+                        </div>
+                    </div>
+                    <script type="text/javascript">addLoadEvent(Focus());</script>
+                </div>
+                <div class="details_book">
+                    <div class="book_price">
+                        <span>优惠价：<b>￥<i>1950</i>元起/人</b></span>
+                        <span>儿童价：<b>￥<em>1580</em>元起/人</b></span>
+                        <span>市场价：<del><b>￥<em>2950</em>元起/人</b></del></span>
+                    </div>
+                    <p>服务承诺认证商家24小时退款保证安全交易无购物如实描述</p>
+                    <div class="book_city">
+                        <div class="row">
+                            <b>出发城市：</b><i>南昌</i>
+                        </div>
+                        <div class="row book_date">
+                            <b>出游日期：</b><input type="text" placeholder="请选择出发日期">
+                        </div>
+                        <div class="row book_num">
+                            <b>出游人数：</b>
+                            <div class="num_count">
+                                <div class="count">
+                                    <button type="button" class="jian">-</button>
+                                    <span>0</span>
+                                    <button type="button" class="jia">+</button>
+                                </div>
+                                <em>成人</em>
+                                <p></p>
+                                <div class="count">
+                                    <button type="button" class="jian">-</button>
+                                    <span>999</span>
+                                    <button type="button" class="jia">+</button>
+                                </div>
+                                <em>儿童</em>
+                                <small>儿童标准</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="#" class="submit">立即预定</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="route_anchor">
+            <div class="anchor_title">
+                <ul>
+                    <li class="active"><a href="#tese">产品特色</a></li>
+                    <li><a href="#line">线路介绍</a></li>
+                    <li><a href="#feiyong">费用说明</a></li>
+                    <li><a href="#book">预定须知</a></li>
+                </ul>
+            </div>
+            <div class="anchor_contain">
+                <div class="title" id="tese">产品特色详情</div>
+                <div class="content">
+                    接待标准<br/>
+                    用餐安排：<br/>
+                    日式美食，让您感受舌尖上的日本！提升日本当地连锁自助烤肉店！<br/>
+                    住宿安排：<br/>
+                    精选日本当地舒适酒店，含1晚或2晚日式温泉酒店。<br/>
+                    行程安排：<br/>
+                    A、B行程亮点<br/>
+                    南线伊势志摩半岛 京都奈良双世遗名城 名古屋风情<br/><br/>
+                    CD行程亮点<br/>
+                    北陆秘境深度 京都奈良双世遗名城 东京1天FREE自由活动<br/>
+                    购物安排：<br/>
+                    自由SHOPPING，行程内涵盖：心斋桥、秋叶原、东京银座等著名地标！<br/>
+                    贴心推荐：奥特莱斯折扣扫货自由购，实惠又实用NO.1！<br/>
+                    重要提示<br/>
+                    1、日本本州行程分为东阪、阪东两种类型，最终行程安排由航空公司所给航班走向为准，网站航班信息为参考航班。航班进出城市变化可能会带来景
+                    点游览顺序以及游览时间的变化，具体请以出团通知书为准。<br/>
+                    2、重要公告：近期有游客由于个人的信用记录问题，遇到航空公司无法出票的情况（机票定金已付，产生损失）。目前法院公布的失信名单，已与中航
+                    信和铁路12306联网，无法用其身份信息出票。您可于报名前进入网站：shixin.court.gov.cn/查询您的失信信息，避免不必要的损失。
+                </div>
+
+                <div class="title" id="line">线路介绍</div>
+                <div class="content">
+                    1、日本本州行程分为东阪、阪东两种类型，最终行程安排由航空公司所给航班走向为准，网站航班信息为参考航班。航班进出城市变化可能会带来景
+                    点游览顺序以及游览时间的变化，具体请以出团通知书为准。<br/>
+                    2、重要公告：近期有游客由于个人的信用记录问题，遇到航空公司无法出票的情况（机票定金已付，产生损失）。目前法院公布的失信名单，已与中航
+                    信和铁路12306联网，无法用其身份信息出票。您可于报名前进入网站：shixin.court.gov.cn/查询您的失信信息，避免不必要的损失。<br/>
+                </div>
+
+                <div class="title" id="feiyong">费用说明</div>
+                <div class="content">
+                    1.交通:往返团队/散客机票含税费（团队机票将统一出票，散客机票因实时计价预定后即刻出票）,当地旅游巴士<br/>
+                    2.住宿:日本当地酒店6晚包含空调，热水，卫生间。<br/>
+                    3.用餐:行程中团队标准用餐，餐标为：1500日元/人/顿（中式餐或自助餐或特色餐，含飞机上用餐，自由活动期间用餐请自理；如因自身原因放弃用
+                    餐，则餐费不退）。<br/>
+                    4.门票:行程中所含的景点首道大门票，具体请参考行程描述。<br/>
+                    5.导服:专职领队和当地中文导游，特殊情况领队兼任导游，亦无退费，请见谅。<br/>
+                    6.儿童价标准:年龄2~12周岁（不含），不占床，不含早餐，其余服务标准同成人；占床与成人同价。<br/>
+                    7.其他:由于出团日期不同，所住酒店可能与网站有所区别，日本酒店不评星级，不同网站网评等级也会有差异，房间面积一般比国内同级酒店小，准确
+                    酒店信息以出团书为准。
+                </div>
+
+                <div class="title" id="book">预定须知</div>
+                <div class="content">
+                    接待标准<br/>
+                    用餐安排：<br/>
+                    日式美食，让您感受舌尖上的日本！提升日本当地连锁自助烤肉店！<br/>
+                    住宿安排：<br/>
+                    精选日本当地舒适酒店，含1晚或2晚日式温泉酒店。<br/>
+                    行程安排：<br/>
+                    A、B行程亮点<br/>
+                    南线伊势志摩半岛 京都奈良双世遗名城 名古屋风情<br/><br/>
+                    CD行程亮点<br/>
+                    北陆秘境深度 京都奈良双世遗名城 东京1天FREE自由活动<br/>
+                    购物安排：<br/>
+                    自由SHOPPING，行程内涵盖：心斋桥、秋叶原、东京银座等著名地标！<br/>
+                    贴心推荐：奥特莱斯折扣扫货自由购，实惠又实用NO.1！<br/>
+                    重要提示<br/>
+                    1、日本本州行程分为东阪、阪东两种类型，最终行程安排由航空公司所给航班走向为准，网站航班信息为参考航班。航班进出城市变化可能会带来景
+                    点游览顺序以及游览时间的变化，具体请以出团通知书为准。<br/>
+                    2、重要公告：近期有游客由于个人的信用记录问题，遇到航空公司无法出票的情况（机票定金已付，产生损失）。目前法院公布的失信名单，已与中航
+                    信和铁路12306联网，无法用其身份信息出票。您可于报名前进入网站：shixin.court.gov.cn/查询您的失信信息，避免不必要的损失。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="route_right">
+        <div class="route_right_hot">
+            <h3>热门线路产品排行</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i>1</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>2</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>3</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>4</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i>5</i>
+                        <span>广州长隆野生动物园-珠海长隆海洋王国双飞半自助4日游2晚5星长隆狩猎房，含大马戏，报名立减</span>
+                        <b>￥6799起</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="route_right_adv">
+            <a href="#"><img src="images/adv01.jpg" alt=""></a>
+            <a href="#"><img src="images/adv01.jpg" alt=""></a>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<!----------底部----------->
+<div class="footer">
+    <div class="container">
+        <div class="foot_li">
+            <img src="images/foot_liaoyang.png" alt="">
+            <ul>
+                <li><b>疗养服务</b></li>
+                <li><a href="#">疗养线路</a></li>
+                <li><a href="#">疗养院</a></li>
+                <li><a href="#">疗养产品</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_piaowu.png" alt="">
+            <ul>
+                <li><b>票务服务</b></li>
+                <li><a href="#">国内机票</a></li>
+                <li><a href="#">国际机票</a></li>
+                <li><a href="#">火车票</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_hotel.png" alt="">
+            <ul>
+                <li><b>酒店服务</b></li>
+                <li><a href="#">酒店预订</a></li>
+                <li><a href="#">三星级</a></li>
+                <li><a href="#">四星级</a></li>
+                <li><a href="#">五星级</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_spot.png" alt="">
+            <ul>
+                <li><b>景点门票</b></li>
+                <li><a href="#">当季精选</a></li>
+                <li><a href="#">周边城市</a></li>
+                <li><a href="#">热门城市</a></li>
+                <li><a href="#">游玩主题</a></li>
+            </ul>
+        </div>
+        <div class="foot_li">
+            <img src="images/foot_about.png" alt="">
+            <ul>
+                <li><b>关于我们</b></li>
+                <li><a href="#">企业简介</a></li>
+                <li><a href="#">媒体报道</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer_nav"></div>
+<div class="footer_copyright">
+    <div class="container">
+        <ul>
+            <li><a href="#">关于文博疗养</a></li>
+            <li><a href="#">业务合作</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li><a href="#">我要投诉</a></li>
+            <li><a href="#">安全中心</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul>
+            <li><b>Copyright ©2016 xxxxx.com   赣ICP备05021087号</b></li>
+            <li><b>文博疗养网客服电话12345678</b></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="images/foot_copyright.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
